@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Introduction</title>
+  <style>
+    body {
+      font-size: 18px;
+    }
+
+    table {
+      width: 90%;
+      border-collapse: collapse; /* Ensures double-line borders appear correctly */
+    }
+    th, td {
+      border: 3px double black; /* Double-line border */
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    img {
+      width: 180px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Combined Table: Personal Introduction, Hobbies, Skills, and Message -->
+  <table>
+    <!-- Title row spanning three columns -->
+    <tr>
+      <th colspan="3" style="text-align: center;">About -- 112207437</th>
+    </tr>
+    <!-- First row: Photo, Name, and Gender -->
+    <tr>
+      <!-- First column: Personal photo spanning three rows -->
+      <td rowspan="3">
+        <img src="https://github.com/wendy437/112207437_LAB1/blob/main/myphoto.jpeg?raw=true" alt="personal photo">
+        <p>personal photo</p>
+      </td>
+      <!-- Name and Gender spanning two columns to align with Email -->
+      <td colspan="2">
+        Name: <input type="text" name="name" value="許伃萱"><br>
+        Gender: 
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female" checked> Female
+        <input type="radio" name="gender" value="other"> Other
+      </td>
+    </tr>
+    <!-- Second row: County and Birthday in separate columns -->
+    <tr>
+      <!-- County dropdown in the second column -->
+      <td>
+        County: 
+        <select name="county">
+          <option value="taipei" selected>Taipei</option>
+          <option value="tainan">Tainan</option>
+          <option value="taichung">Taichung</option>
+          <option value="taoyuan">Taoyuan</option>
+        </select>
+      </td>
+      <!-- Birthday in the third column -->
+      <td>
+        Birthday: <input type="date" name="birthday" value="2004-11-13">
+      </td>
+    </tr>
+    <!-- Third row: Email spanning two columns -->
+    <tr>
+      <td colspan="2">Email: <input type="email" name="email" value="112207437@g.nccu.edu.tw"></td>
+    </tr>
+    <!-- Fourth row: Hobby checkboxes -->
+    <tr>
+      <td>Hobby</td>
+      <td colspan="2">
+        <input type="checkbox" name="hobby" value="swimming"> Swimming
+        <input type="checkbox" name="hobby" value="volleyball" checked> Volleyball
+        <input type="checkbox" name="hobby" value="movie" checked> Movie
+        <input type="checkbox" name="hobby" value="game"> Game
+        <input type="checkbox" name="hobby" value="sleep" checked> Sleep
+      </td>
+    </tr>
+    <!-- Fifth row: Skill checkboxes -->
+    <tr>
+      <td>Skill</td>
+      <td colspan="2">
+        <input type="checkbox" name="skill" value="java" checked> Java
+        <input type="checkbox" name="skill" value="html" checked> HTML
+        <input type="checkbox" name="skill" value="python" checked> Python
+        <input type="checkbox" name="skill" value="office" checked> Microsoft Office
+        <input type="checkbox" name="skill" value="premiere"> Premiere
+      </td>
+    </tr>
+    <!-- Sixth row: Say something area -->
+    <tr>
+      <td>Say something</td>
+      <td colspan="2"><textarea placeholder="Say something here." rows="3" cols="30"></textarea></td>
+    </tr>
+      <!-- Seventh row: Submit and Reset buttons -->
+      <tr>
+        <td colspan="3" style="text-align: center;">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>
